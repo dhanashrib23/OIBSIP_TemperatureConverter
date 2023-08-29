@@ -1,0 +1,205 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+table {
+    margin: 0;
+    padding: 0;
+    font-family: FreeMono, monospace;
+}
+
+/* Global Styles */
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Add box shadow */
+}
+
+h1.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 5px solid crimson;
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.4rem;
+}
+
+.mobile p {
+    font-size: 1.4rem;
+}
+
+.mobile i {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+/* Table Styles */
+.conversion-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.conversion-table th,
+.conversion-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.conversion-table th {
+    background-color: #333;
+    color: white;
+}
+
+.conversion-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.fromValueWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fromValue {
+    width: 70px;
+    /* Adjust the width as needed */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    /* Add box shadow */
+}
+
+/* Input and Button Styles */
+input[type="number"],
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a60000;
+}
+
+#resultValue {
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="number"],
+    select,
+    button {
+        font-size: 12px;
+    }
+}
+
+/* Style for dropdown (select) element */
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: #555;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* Hover style for dropdown */
+select:hover {
+    border-color: #999;
+}
+
+/* Footer */
+#footer {
+    background-color: #212121;
+    color: rgb(3, 2, 2);
+    padding: 40px 0;
+    text-align: center;
+}
+
+#footer h3 {
+    font-family: FreeMono, monospace;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #000000;
+    /* Change color for consistency */
+}
+
+#footer h1 {
+    font-family: FreeMono, monospace;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000000;
+    /* Change color for consistency */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #9b815a;
+    /* Change color for consistency */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f5dcb6;
+    /* Change color for consistency */
+}
